@@ -3,9 +3,26 @@
 <head>
     <title>David Ayodele - portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+
 <body>
+<a href="https://wa.me/2347039989320?text=Hello%20David,%20I%20saw%20your%20portfolio" class="whatsapp-btn" target="_blank">
+    💬
+</a>
+
+    <nav class="navbar">
+        <h2 class="logo">David</h2>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+
+    </nav>
 
 <header>
     <h1>David Ayodele</h1>
@@ -16,24 +33,24 @@
     <a href="#projects" class="hero-btn">View My Work</a>
 </header>
 
-<section class="skills">
+<section id="skills" class="skills fade-in">
 
     <h2> My Skills</h2>
 
     <div class="skills-container">
         
         <div class="skill-card">
-            <h3>HTML</h3>
+            <h3>💻 HTML</h3>
             <p>Building structure web pages</p>
         </div>
 
         <div class="skill-card">
-            <h3>CSS</h3>
+            <h3>🎨 CSS</h3>
             <p>Styling mordern responsive layout</p>
         </div>
         
         <div class="skill-card">
-            <h3>JavaScript</h3>
+            <h3>⚡JavaScript</h3>
             <p>Currently learning interactivity</p>
         </div>
 
@@ -41,30 +58,55 @@
     
 </section>
 
-<section>
-    <h2>Project</h2>
+<section id="projects" class="fade-in">
 
-    <h2>Contact: 07039989320</h2>
-    <p>Emai: ayodele557@gmail.com</p>
+<h2>My projects</h2>
 
+<div class="project-container">
+
+    
     <div class="project-card">
         <h3>Church Website</h3>
         <p>A responsive church landing page buit with HTML and CSS.</p>
-        <a href="https://ayodele557.github.io/ChurchWebsite3/" target="_blank">View project</a>
+        <a href="https://ayodele557.github.io/ChurchWebsite/" target="_blank">View project</a>
     </div>
 
     <div class="project-card">
         <h3>Calculator App</h3>
         <p>A javascripcript calculator that performs basic math operations.</p>
-        <a href="https://ayodele557.github.io/calculatorApp/" target="_blank">View project</a>
+        <a href="https://ayodele557.github.io/CalculatorApp/" target="_blank">View project</a>
     </div>
 
     <div class="project-card">
         <h3>Todo List App</h3>
         <p>A JavaScript app that lets user add, delete, and complete tasks.</p>
-        <a href="https://aydele557.github.io/TodoApp2/" target="_blank">View project</a>
+        <a href="https://ayodele557.github.io/TodoApp/" target="_blank">View project</a>
     </div>
 
+</div>
+
+</section>
+
+<section id="contact" class="fade-in">
+    <h2>Contact Me</h2>
+
+    <p>📞 phone: 07039989320</p>
+    <p>📧 Email: ayodele557@gmail.com</p>
+
+    <form action="https://formspree.io/f/ayodeled557@gmail.com" method="POST">
+
+        <input type="hidden" name="_next" value="https://ayodele557.github.io/">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea name="message" placeholder="Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p id="form-status"></p>
 </section>
 
 <footer>
